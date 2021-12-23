@@ -1,0 +1,311 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 1200px;
+    align-content: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-hover-color);
+}
+
+.header__nav-logotyp {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--main-hover-color);
+    }
+}
+
+.header__nav-list {
+    display: flex;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.header__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-right: 93px;
+    color: var(--main-title-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+.header__nav-list-item {
+    padding-right: 50px;
+    &:last-child {
+        padding-right: 305px;
+    }
+}
+
+.header__nav-list-link {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+    &.current::after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: var(--main-hover-color);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+    }
+}
+
+.header__contact {
+    display: flex;
+    text-align: center;
+}
+
+.connect {
+    margin-left: auto;
+}
+
+.header__contact-mail,
+.header__contact-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+.header__contact-mail,
+.header__contact-tel {
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+    margin-right: 30px;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__contact-social-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.header__contact-social-icons {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+
+
+
+
+// .header {
+//     display: flex;
+//     justify-content: center;
+//     height: 80px;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+//     border-bottom: 1px solid #ECECEC;
+// }
+
+// .header-container {
+//     display: flex;
+//     align-items: center;
+//     box-sizing: border-box;
+//     min-width: 1200px;
+//     align-content: center;
+// }
+
+// .header-nav {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .header-nav-logo {
+//     font-family: Raleway;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     color: var(--main-hover-color);
+// }
+
+// .header-nav-logotyp {
+//     font-family: Raleway;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     color: #000000;
+//     transition: color 250ms linear;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover {
+//         color: var(--main-hover-color);
+//     }
+// }
+
+// .header-nav-list {
+//     display: flex;
+//     padding-left: 0;
+//     margin: 0 auto;
+// }
+
+// .header-nav-link {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     padding-right: 93px;
+//     color: var(--main-title-color);
+//     transition: color 250ms linear;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--main-hover-color);
+//     }
+// }
+
+// .header-nav-item {
+//     padding-right: 50px;
+
+//     &:last-child {
+//         padding-right: 305px;
+//     }
+// }
+
+// .header-link {
+//     font-style: 400;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--main-title-color);
+//     transition: color 250ms linear;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     position: relative;
+
+//     &:hover,
+//     &:focus {
+//         color: var(--main-hover-color);
+//     }
+
+//     &.current::after {
+//         content: '';
+//         width: 100%;
+//         height: 4px;
+//         background-color: var(--main-hover-color);
+//         border-radius: 10px;
+//         position: absolute;
+//         left: 0;
+//         bottom: -32px;
+//     }
+// }
+
+// .header-contact {
+//     display: flex;
+//     text-align: center;
+// }
+
+// .connect {
+//     margin-left: auto;
+// }
+
+// .header-mail,
+// .header-tel {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--main-text-color);
+// }
+
+// .header-mail,
+// .header-tel {
+//     display: flex;
+//     align-items: center;
+//     color: var(--main-text-color);
+//     margin-right: 30px;
+//     transition: color 250ms linear;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--main-hover-color);
+//     }
+
+//     &:last-child {
+//         margin-right: 0;
+//     }
+// }
+
+// .header-social-icon {
+//     margin-right: 10px;
+//     width: 16px;
+//     height: 12px;
+//     fill: currentColor;
+// }
+
+// .header-social-icons {
+//     width: 10px;
+//     height: 16px;
+//     margin-right: 10px;
+//     fill: currentColor;
+// }

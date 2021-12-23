@@ -1,0 +1,220 @@
+.footer {
+    background-color: var(--main-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer>.container {
+    display: flex;
+}
+
+.footer__list {
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.footer__list-item {
+    margin-top: 9px;
+    &:first-child {
+        margin-top: 20px;
+        }
+    &:last-child {
+        padding-bottom: 0;
+        }
+}
+
+.footer__left-logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-hover-color);
+}
+
+.footer__left-logotyp {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-btn-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+.footer__list-nav-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-btn-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+.footer__list-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+.footer__list-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+.footer__nav {
+    margin-left: 70px;
+    box-sizing: inherit;
+}
+
+.footer__nav-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--main-btn-color);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer__nav-social-list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.social__item {
+    width: 44px;
+    height: 44px;
+}
+
+.social__item + .social__item {
+    margin-left: 10px;
+}
+
+
+.social__link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    filter: drop-shadow(0px 4px 4px,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25));
+    color: var(--main-btn-color);
+    transition: color 250ms linear,
+        background-color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--main-hover-color);
+        color: var(--main-btn-color);
+    }
+}
+
+.social__icon {
+    fill: var(--main-btn-color);
+}
+
+.footer__right-titel {
+    width: 219px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-btn-color);
+    margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer__right-form-icon {
+    display: flex;
+}
+
+.footer__right-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15));
+    background-color: transparent;
+    margin-left: 93px;
+    margin-top: 20px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+    }
+}
+
+.footer-btn {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 29px;
+}
+
+.btn-icon {
+    margin-left: 10px;
+}
