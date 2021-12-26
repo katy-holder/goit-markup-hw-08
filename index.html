@@ -52,7 +52,7 @@
 
         <main>
             <!-- hero -->
-            <section class="section section-hero">
+            <section class="hero">
                 <div class="container hero-container">
                     <h1 class="hero__title">
                         Эффективные решения для вашего бизнеса
@@ -61,18 +61,18 @@
                 </div>
             </section>
             <!-- about -->
-            <!-- <section class="section-about">
+            <section class="section-about">
                 <div class="container about-container">
                     <h2 class="visually-hidden">О нас</h2>
-                    <ul class="about__list list">
-                        <li class="about__list-item">
+                    <ul class="about-list list">
+                        <li class="about-list__item">
                             <div class="about-list__bg-icon">
                                 <svg class="about-list__icon" width="70" height="70">
                                     <use href="./img/icons.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="about__title">Внимание к деталям</h3>
-                            <p class="about__text">Идейные соображения, а также начало повседневной работы по
+                            <h3 class="about-list__title">Внимание к деталям</h3>
+                            <p class="about-list__text">Идейные соображения, а также начало повседневной работы по
                                 формированию
                                 позиции.</p>
                         </li>
@@ -82,8 +82,9 @@
                                     <use href="./img/icons.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="about__title">Пунктуальность</h3>
-                            <p class="about__text">Задача организации, в особенности же рамки и место обучения кадров
+                            <h3 class="about-list__title">Пунктуальность</h3>
+                            <p class="about-list__text">Задача организации, в особенности же рамки и место обучения
+                                кадров
                                 влечет за собой.</p>
                         </li>
                         <li class="about-list__item">
@@ -92,8 +93,9 @@
                                     <use href="./img/icons.svg#icon-diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="about__title">Планирование</h3>
-                            <p class="about__text">Равным образом консультация с широким активом в значительной степени
+                            <h3 class="about-list__title">Планирование</h3>
+                            <p class="about-list__text">Равным образом консультация с широким активом в значительной
+                                степени
                                 обуславливает.</p>
                         </li>
                         <li class="about-list__item">
@@ -102,13 +104,14 @@
                                     <use href="./img/icons.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="about__title">Современные технологии</h3>
-                            <p class="about__text">Значимость этих проблем настолько очевидна, что реализация плановых
+                            <h3 class="about-list__title">Современные технологии</h3>
+                            <p class="about-list__text">Значимость этих проблем настолько очевидна, что реализация
+                                плановых
                                 заданий.</p>
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
             <!-- work -->
             <!-- <section class="section">
                 <div class="container">
@@ -136,12 +139,22 @@
                 </div>
             </section> -->
             <!-- team -->
-            <section class="section team-section">
+            <!-- <section class="section team-section">
                 <div class="container team-container">
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team__list list">
                         <li class="team__list-item">
-                            <img src="./img/team_1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                            <picture>
+                                <source srcset="./img/team_1/team_1.jpg 1x,
+                                                ./img/team_1/team_1-2x.jpg 2x" media="(min-width:1200px)">
+
+                                <source srcset="./img/team_1/team_1-tab-1x.jpg 1x,
+                                                ./img/team_1/team_1-tab-2x.jpg 2x" media="(min-width:768px)">
+
+                                <source srcset="./img/team_1/team_1-mob-1x.jpg 1x,
+                                        ./img/team_1/team_1-mob-2x.jpg 2x" media="(min-width:478px)">
+                                <img src="./img/team_1/team_1.jpg" alt="Михаил Ермаков" />
+                            </picture>
                             <div class="team__list-content">
                                 <h3 class="team__list-pre-title">Игорь Демьяненко</h3>
                                 <p lang="en" class="team__list-text">Product Designer</p>
@@ -178,7 +191,17 @@
                             </div>
                         </li>
                         <li class="team__list-item">
-                            <img src="./img/team_2.jpg" alt="Ольга Репина" width="270" height="260" />
+                            <picture>
+                                <source srcset="./img/team_2/team_2.jpg 1x,
+                                                ./img/team_2/team_2-2x.jpg 2x" media="(min-width:1200px)">
+
+                                <source srcset="./img/team_2/team_2-tab-1x.jpg 1x,
+                                                ./img/team_2/team_2-tab-2x.jpg 2x" media="(min-width:768px)">
+
+                                <source srcset="./img/team_2/team_2-mob-1x.jpg 1x,
+                                        ./img/team_2/team_2-mob-2x.jpg 2x" media="(min-width:478px)">
+                                <img src="./img/team_2/team_2.jpg" alt="Михаил Ермаков" />
+                            </picture>
                             <div class="team__list-content">
                                 <h3 class="team__list-pre-title">Ольга Репина</h3>
                                 <p lang="en" class="team__list-text">Frontend Developer</p>
@@ -215,7 +238,17 @@
                             </div>
                         </li>
                         <li class="team__list-item">
-                            <img src="./img/team_3.jpg" alt="Николай Тарасов" width="270" height="260" />
+                            <picture>
+                                <source srcset="./img/team_3/team_3.jpg 1x,
+                                                ./img/team_3/team_3-2x.jpg 2x" media="(min-width:1200px)">
+
+                                <source srcset="./img/team_3/team_3-tab-1x.jpg 1x,
+                                                ./img/team_3/team_3-tab-2x.jpg 2x" media="(min-width:768px)">
+
+                                <source srcset="./img/team_3/team_3-mob-1x.jpg 1x,
+                                        ./img/team_3/team_3-mob-2x.jpg 2x" media="(min-width:478px)">
+                                <img src="./img/team_3/team_3.jpg" alt="Михаил Ермаков" />
+                            </picture>
                             <div class="team__list-content">
                                 <h3 class="team__list-pre-title">Николай Тарасов</h3>
                                 <p lang="en" class="team__list-text">Marketing</p>
@@ -251,7 +284,17 @@
                             </div>
                         </li>
                         <li class="team__list-item">
-                            <img src="./img/team_4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                            <picture>
+                                <source srcset="./img/team_4/team_4.jpg 1x,
+                                                ./img/team_4/team_4-2x.jpg 2x" media="(min-width:1200px)">
+
+                                <source srcset="./img/team_4/team_4-tab-1x.jpg 1x,
+                                                ./img/team_4/team_4-tab-2x.jpg 2x" media="(min-width:768px)">
+
+                                <source srcset="./img/team_4/team_4-mob-1x.jpg 1x,
+                                        ./img/team_4/team_4-mob-2x.jpg 2x" media="(min-width:478px)">
+                                <img src="./img/team_4/team_4.jpg" alt="Михаил Ермаков" />
+                            </picture>
                             <div class="team__list-content">
                                 <h3 class="team__list-pre-title">Михаил Ермаков</h3>
                                 <p lang="en" class="team__list-text">UI Designer</p>
@@ -288,9 +331,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <!-- client -->
-            <!-- <section class="section">
+            <section class="section">
                 <div class="container">
                     <h2 class="client-title">Постоянные клиенты</h2>
                     <ul class="client-list list">
@@ -338,7 +381,7 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
         <!-- footer -->
         <!-- <footer class="footer">
