@@ -4,9 +4,13 @@
     padding-bottom: 60px;
 }
 
-.footer>.container {
-    display: flex;
+.footer-container {
+    text-align: center;
 }
+
+// .footer>.container {
+//     display: flex;
+// }
 
 .footer__list {
     padding-left: 0;
@@ -95,8 +99,9 @@
 }
 
 .footer__nav {
-    margin-left: 70px;
-    box-sizing: inherit;
+    // margin-left: 70px;
+    // box-sizing: inherit;
+    text-align: center;
 }
 
 .footer__nav-title {
@@ -106,7 +111,8 @@
     letter-spacing: 0.03em;
     color: var(--main-btn-color);
     text-transform: uppercase;
-    margin-top: 0;
+    // margin-top: 0;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -155,8 +161,12 @@
     fill: var(--main-btn-color);
 }
 
+.footer__right {
+    text-align: center;
+}
+
 .footer__right-titel {
-    width: 219px;
+    // width: 219px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -164,17 +174,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-btn-color);
-    margin-left: 93px;
-    margin-top: 0;
+    // margin-left: 93px;
+    // margin-top: 0;
+    margin-top: 60px;
     margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
 }
 
 .footer__right-form-icon {
-    display: flex;
+    // display: flex;
+    margin-top: 20px;
 }
 
 .footer__right-input {
-    width: 358px;
+    width: 100%;
+    // width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -182,8 +198,9 @@
             rgba(0, 0, 0, 0.15),
             rgba(0, 0, 0, 0.15));
     background-color: transparent;
-    margin-left: 93px;
-    margin-top: 20px;
+    // margin-left: 93px;
+    margin-bottom: 20px;
+    // margin-top: 20px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -191,11 +208,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-right: 12px;
+    // margin-right: 12px;
     &::placeholder {
         font-style: normal;
         font-weight: 400;
@@ -207,11 +224,14 @@
         color: rgba(255, 255, 255, 0.6);
 
     }
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
 }
 
 .footer-btn {
-    display: flex;
-    margin-top: 20px;
+    // display: flex;
+    margin: 0 auto;
     padding-left: 29px;
 }
 

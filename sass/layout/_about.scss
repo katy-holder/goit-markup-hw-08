@@ -1,14 +1,16 @@
 .section-about {
     padding-top: 60px;
     padding-bottom: 60px;
-     @media screen and (min-width: 1200px) {
-         padding-top: 94px;
-     }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
 }
 
-// .about-container {
-//     height: 251px;
-// }
+.about-container {
+     @media screen and (min-width: 1200px) {
+         height: 251px;
+     }
+}
 
 .about-list {
     padding-left: 0;
@@ -16,6 +18,8 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        margin-right: -30px
+
     }
 
      @media screen and (min-width: 1200px) {
@@ -30,17 +34,21 @@
     height: 226px;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 251px; 
-        margin: 15px;
-        // margin-right: 30px;
+        // width: 354px;
+        // height: 251px; 
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
         width: calc(100% / 2 - 30px);
     }
 
     @media screen and (min-width: 1200px) {
          width: 270px;
          height: 120px;
-         margin-right: 30px;
+        //  margin-right: 30px;
+        //  margin-left: 0;
+         margin: 0 30px 0 0;
          &:last-child {
              margin-right: 0;
          }
@@ -72,11 +80,12 @@
     margin-bottom: 30px;
     margin-top: 0;
      @media screen and (min-width: 768px) {
-         max-width: 354px;
+         width: 354px;
          margin-top: 0;
      }
     @media screen and (min-width: 1200px) {
-        max-width: 270px;
+        width: 270px;
+        margin-bottom: 0;
     }
 }
 
