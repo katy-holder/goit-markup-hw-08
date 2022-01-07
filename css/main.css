@@ -612,15 +612,6 @@ body {
   fill: var(--main-hover-color);
 }
 
-.mob-menu__close-mob-menu {
-  transition: fill 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-menu__close-mob-menu:hover {
-  fill: var(--main-hover-color);
-}
-
 .header__contact-social-icons {
   width: 10px;
   height: 16px;
@@ -669,6 +660,10 @@ body {
   margin-left: auto;
   border: none;
   background-color: transparent;
+}
+
+.mob-menu__close-mob-menu:hover {
+  fill: var(--main-hover-color);
 }
 
 .mob-menu__item:not(:last-child) {

@@ -221,14 +221,6 @@
     }
 }
 
-.mob-menu__close-mob-menu {
-    transition: fill 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-        fill: var(--main-hover-color);
-    }
-}
-
 .header__contact-social-icons {
     width: 10px;
     height: 16px;
@@ -274,6 +266,9 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
+    &:hover {
+        fill: var(--main-hover-color);
+    }
 }
 
 .mob-menu__item {
