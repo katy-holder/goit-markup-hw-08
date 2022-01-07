@@ -20,14 +20,14 @@
 .client-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
     padding: 0;
+    @media screen and (min-width: 768px) {
+        margin: -15px;
+    }
      @media screen and (min-width: 1200px) {
-         display: flex;
-         margin-top: 50px;
-         margin-bottom: 0;
-         padding-left: 0;
+        margin: -15px;
+        flex-wrap: nowrap;
      }
 }
 
@@ -35,22 +35,17 @@
     width: calc(100% / 2 - 30px);
     width: 210px;
     height: 92px;
-    margin-left: 30px;
-    margin-bottom: 30px;;
+    margin: 15px;
     @media screen and (min-width: 768px) {
         flex-basis: calc(100% / 3 - 30px);
+        margin: 15px;
      }
 
     @media screen and (min-width: 1200px) {
-        max-width: 170px;
-        margin-top: 0;
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
-     }
+        margin: 15px;
+        
+    }
+     
 }
 
 .client__link {
